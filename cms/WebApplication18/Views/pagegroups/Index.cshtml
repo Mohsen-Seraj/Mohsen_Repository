@@ -1,0 +1,36 @@
+﻿@model IEnumerable<datalayer.pagegroup>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "مدیریت گروه ها";
+}
+
+<h2>مدیریت گروه ها</h2>
+
+<p>
+    @Html.ActionLink("افزودن گروه", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.grouptitle)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.grouptitle)
+            </td>
+            <td>
+                @Html.ActionLink("ویرایش", "Edit", new { id = item.groupid }) |
+                @Html.ActionLink("جزییات", "Details", new { id = item.groupid }) |
+                @Html.ActionLink("حذف", "Delete", new { id = item.groupid })
+            </td>
+        </tr>
+    }
+
+</table>

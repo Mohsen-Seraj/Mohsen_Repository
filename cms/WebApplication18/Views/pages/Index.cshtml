@@ -1,0 +1,73 @@
+﻿@model IEnumerable<datalayer.page>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "مدیریت صفحات";
+}
+
+<h2>مدیریت صفحات</h2>
+
+<p>
+    @Html.ActionLink("افزودن خبر", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.imagename)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pagegroup.grouptitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.title)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.visit)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.showinslider)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.createdate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                <img src="~/images/@item.imagename" class="thumbnail" style="max-width:120px" />
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.pagegroup.grouptitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.title)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.visit)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.showinslider)
+            </td>
+            <td>
+                @item.createdate.toshamsi();
+            </td>
+            <td>
+                @Html.ActionLink("ویرایش", "Edit", new { id = item.pageid }) |
+                @Html.ActionLink("جزییات", "Details", new { id = item.pageid }) |
+                @Html.ActionLink("حذف", "Delete", new { id = item.pageid })
+            </td>
+        </tr>
+    }
+
+</table>

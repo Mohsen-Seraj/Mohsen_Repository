@@ -1,0 +1,34 @@
+﻿@model IEnumerable<datalayer.page>
+
+
+@{
+    ViewBag.Title = "archivenews";
+}
+
+
+<section class="last-news-section border-radius margin-top-60">
+    <header><i class="icons icon-doc-2"></i>  <h3>آرشیو آخبار </h3> </header>
+    <ul>
+
+        @foreach (var item in Model)
+        {
+
+
+            <li>
+                <img class="border-radius" src="~/images/@item.imagename">
+                <h2> <a href="/news/@item.pageid"> @item.title </a></h2>
+                <p>
+                    @item.shortdescription
+                </p>
+                <span class="date-publish"><i class="fa fa-calendar"></i> انتشار :@item.createdate.toshamsi() </span>
+                <a href="" class="more-link"><i class="icons icon-more"></i></a>
+            </li>
+
+
+        }
+
+
+
+    </ul>
+</section>
+

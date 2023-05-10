@@ -1,0 +1,28 @@
+﻿@model datalayer.pagegroup
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "جزییات";
+}
+
+<h2>جزییات</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.grouptitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grouptitle)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("ویرایش", "Edit", new { id = Model.groupid }) |
+    @Html.ActionLink("بازگشت", "Index")
+</p>
