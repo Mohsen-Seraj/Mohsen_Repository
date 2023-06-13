@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ex2
 {
-  
+  //kjkljljlkjlj
         public class Product
         {
             public int Id { get; set; }
