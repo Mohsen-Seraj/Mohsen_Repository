@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "n0wT3ZpQ+CfV5zFNhjkvao7fkFxxbEao2qn/fuyL1tF/ajJUoarB4Qkvps6GxboKYPgQcleH/d+6ciGee1j9Xg==",
+  "dgSpecHash": "r/XxrXqEJmx2B/OmkcOgGCmY1z+9UaWg5F+qjmRcv7mDv/nnOaWOXC+nX27CbgRrvsWZE58UOL5ywVY17RtSPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUSCenter\\Desktop\\Exercise\\ex1\\ex1\\ex1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ASUSCenter\\Source\\Repos\\Mohsen_Repository\\ex1\\ex1\\ex1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUSCenter\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\ASUSCenter\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\ASUSCenter\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\ASUSCenter\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

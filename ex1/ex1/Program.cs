@@ -10,7 +10,7 @@ namespace ex1
 
             string[] cities = { "ROME", "LONDON", "NAIROBI", "CALIFORNIA", "ZURICH", "NEW DELHI", "AMSTERDAM", "ABU DHABI", "PARIS" };
 
-
+            //Hello
             #region Sorting with LINQ
 
             //Sorting with LINQ
